@@ -208,26 +208,3 @@ a {
 	border-radius: 4px;
 	opacity: 0;
 }
-
-#main article p {
-	padding-top: 1rem;
-	line-height: 1.45rem;
-}
-
-/* Opened lightbox */
-#main article:target {
-	opacity: 1;
-	/* transform: translateY(14rem); */
-}
-
-/* Cross */
-.cross {
-	white-space: nowrap;
-  cursor: pointer;
-	position: absolute;
-	content: 'x';
-	top: 0;
-	right: 0;
-	width: 4rem;
-	height: 4rem;
-} */
