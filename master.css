@@ -137,7 +137,7 @@ body {
 
 #header nav ul li {
 	padding-left: 0;
-	border-left: solid 1px #ffffff;
+	border: solid 1px #ffffff;
 	padding: 0.25rem 1rem;
 }
 
