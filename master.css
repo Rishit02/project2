@@ -209,8 +209,8 @@ a {
 }
 
 .lightbox .close::after {
-  width: 2rem;
-  height: 2rem;
+  width: 10rem;
+  height: 10rem;
   position: absolute;
   display: flex;
   z-index: 1;
