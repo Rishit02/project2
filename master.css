@@ -1,5 +1,3 @@
-/* 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 */
-
 html, body, div, span, p, li, ul, a, h2 {
 	margin: 0;
 	padding: 0;
@@ -71,7 +69,8 @@ h3 {
 }
 
 body {
-	background: #23222b;
+	/* background: #23222b; */
+	background: radial-gradient(circle, rgba(35,35,45,1) 0%, rgba(42,41,55,1) 100%);
 	color: #ffffff;
 	font-family: "Source Sans Pro", sans-serif;
 	letter-spacing: 0.2rem;
@@ -99,10 +98,6 @@ body {
 	align-items: center;
 	text-align: center;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	/* background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%); */
 	max-width: 100%;
 	position: fixed;
 }
@@ -190,7 +185,7 @@ a {
 	width:50rem;
 	position: relative;
 	padding: 1.5em;
-	background-color: rgba(27, 31, 34, 0.85);
+	background-color: rgba(27, 31, 34);
 	letter-spacing: normal;
 	font-size: 18px;
 	line-height: 1.6;
