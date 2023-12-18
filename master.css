@@ -231,7 +231,7 @@ a {
 }
 
 iframe {
-	width: inherit;
+	width: fit-content;
 	height: 50rem;
 	line-height:1.2;
 }
