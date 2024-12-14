@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="animation.css">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <link rel="stylesheet" href="animation.css" />
     <title>Rishit's Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       // Dark Mode Toggle Script
       function toggleDarkMode() {
-          const darkModeEnabled = document.body.classList.toggle('dark-mode');
-          document.querySelectorAll('.navbar, .nav-link, .btn-outline-dark, .card, .card-header, .accent, h1, .project-card-left, .project-card-right')
-              .forEach(element => element.classList.toggle('dark-mode'));
-          localStorage.setItem('darkMode', darkModeEnabled ? 'enabled' : 'disabled');
+        const darkModeEnabled = document.body.classList.toggle("dark-mode");
+        document
+          .querySelectorAll(
+            ".navbar, .nav-link, .btn-outline-dark, .card, .card-header, .accent, h1, .project-card-left, .project-card-right"
+          )
+          .forEach((element) => element.classList.toggle("dark-mode"));
+        localStorage.setItem(
+          "darkMode",
+          darkModeEnabled ? "enabled" : "disabled"
+        );
       }
 
       window.onload = function () {
-          if (localStorage.getItem('darkMode') === 'enabled') {
-              document.body.classList.add('dark-mode');
-              document.querySelectorAll('.navbar, .nav-link, .btn-outline-dark, .card, .card-header, .accent, h1, .project-card-left, .project-card-right')
-                  .forEach(element => element.classList.add('dark-mode'));
-          }
+        if (localStorage.getItem("darkMode") === "enabled") {
+          document.body.classList.add("dark-mode");
+          document
+            .querySelectorAll(
+              ".navbar, .nav-link, .btn-outline-dark, .card, .card-header, .accent, h1, .project-card-left, .project-card-right"
+            )
+            .forEach((element) => element.classList.add("dark-mode"));
+        }
       };
     </script>
   </head>
@@ -31,7 +51,15 @@
   <nav class="navbar navbar-expand-lg sticky-top glass">
     <div class="container-fluid">
       <a class="navbar-brand accent" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,23 +68,38 @@
             <a class="nav-link active" aria-current="page" href="#">About me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#experience">Experience</a>
+            <a class="nav-link active" aria-current="page" href="#experience"
+              >Experience</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#education">Education</a>
+            <a class="nav-link active" aria-current="page" href="#education"
+              >Education</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+            <a class="nav-link active" aria-current="page" href="#projects"
+              >Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#personal-projects">Personal Projects</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#personal-projects"
+              >Personal Projects</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+            <a class="nav-link active" aria-current="page" href="#skills"
+              >Skills</a
+            >
           </li>
         </ul>
         <!-- Dark Mode Toggle -->
-        <button class="btn btn-outline-dark ms-auto" onclick="toggleDarkMode()">Dark Mode</button>
+        <button class="btn btn-outline-dark ms-auto" onclick="toggleDarkMode()">
+          Dark Mode
+        </button>
       </div>
     </div>
   </nav>
@@ -68,40 +111,75 @@
         <p>A Computer Science student.</p>
       </div>
 
-
-      <div id="experience" class="d-flex justify-content-center flex-column align-items-center">
-        <h4 class="card-title text-start">Experience</h5>
-        <br>
+      <div
+        id="experience"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <h4 class="card-title text-start">Experience</h4>
+        <br />
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
-            <a href="https://thesoftwarepractice.com/"><h5 class="text-end accent">The Software Practice</h5></a>
+            <a href="https://thesoftwarepractice.com/"
+              ><h5 class="text-end accent">The Software Practice</h5></a
+            >
             <span class="text-start">
-              <img src="imgs/c-sharp-c.svg" style="width:20px;height:20px;">
+              <img src="imgs/c-sharp-c.svg" style="width: 20px; height: 20px" />
               May - Nov 2024
             </span>
           </div>
           <div class="card-body text-start">
             <ul>
-              <li>Engineered RESTful API endpoints using the FastEndpoints library in C# to interface with the Central Accounts Management system (CAM), achieving a 30% improvement in API response time</li>
-              <li>Wrote and maintained comprehensive unit and integration tests (using libraries like xUnit and tools like SonarQube) for system components and APIs, maintaining >80% code coverage at all times</li>
-              <li>Collaborated in cross-functional teams using Jira, contributing to sprint planning, daily stand-ups, and retrospectives within an Agile framework</li>
+              <li>
+                Engineered RESTful API endpoints using the FastEndpoints library
+                in C# to interface with the Central Accounts Management system
+                (CAM), achieving a 30% improvement in API response time
+              </li>
+              <li>
+                Wrote and maintained comprehensive unit and integration tests
+                (using libraries like xUnit and tools like SonarQube) for system
+                components and APIs, maintaining >80% code coverage at all times
+              </li>
+              <li>
+                Collaborated in cross-functional teams using Jira, contributing
+                to sprint planning, daily stand-ups, and retrospectives within
+                an Agile framework
+              </li>
             </ul>
           </div>
         </div>
 
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
-            <a href="https://www.emsec.uk/" target="_blank"><h5 class="text-end accent">Emsec</h5></a>
+            <a href="https://www.emsec.uk/" target="_blank"
+              ><h5 class="text-end accent">Emsec</h5></a
+            >
             <span class="text-start">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width:20px;height:20px;margin-right: 5px;margin-top: 1px;">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                alt="Python"
+                style="
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 5px;
+                  margin-top: 1px;
+                "
+              />
               Jun - Nov 2023
             </span>
           </div>
           <div class="card-body text-start">
             <h5 class="card-title"></h5>
             <ul>
-              <li>Developed an automated tool in Python to decrypt A5/1 encryption in GSM networks using Wireshark and Rainbow Tables within a Linux environment </li>
-              <li>Collaborated with a team of 5 engineers to refine proprietary software, working extensively with tools such as GNU Radio and software-defined radios</li>
+              <li>
+                Developed an automated tool in Python to decrypt A5/1 encryption
+                in GSM networks using Wireshark and Rainbow Tables within a
+                Linux environment
+              </li>
+              <li>
+                Collaborated with a team of 5 engineers to refine proprietary
+                software, working extensively with tools such as GNU Radio and
+                software-defined radios
+              </li>
             </ul>
           </div>
         </div>
@@ -110,31 +188,60 @@
           <div class="card-header d-flex justify-content-between">
             <h5 class="text-end accent">CL3O Intelligence</h5>
             <span class="text-start">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width:20px;height:20px;margin-right: 5px;margin-top: 1px;">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                alt="Python"
+                style="
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 5px;
+                  margin-top: 1px;
+                "
+              />
               Aug - Sep 2020
             </span>
           </div>
           <div class="card-body text-start">
             <h5 class="card-title"></h5>
             <ul>
-              <li>Applied advanced time series analysis to tick data in the rubber and palm oil futures markets using Python’s Pandas library, identifying key trends and price patterns</li>
-              <li>Designed and implemented statistical significance tests (e.g., ADF test, Pearson correlation) to validate momentum and mean-reversion trading strategies, optimising them for integration with automated quantitative models</li>
-              <li>Developed a cutting-edge technical analysis tool that achieved a 60% increase in returns on a paper trading system, significantly improving trading performance</li>
+              <li>
+                Applied advanced time series analysis to tick data in the rubber
+                and palm oil futures markets using Python’s Pandas library,
+                identifying key trends and price patterns
+              </li>
+              <li>
+                Designed and implemented statistical significance tests (e.g.,
+                ADF test, Pearson correlation) to validate momentum and
+                mean-reversion trading strategies, optimising them for
+                integration with automated quantitative models
+              </li>
+              <li>
+                Developed a cutting-edge technical analysis tool that achieved a
+                60% increase in returns on a paper trading system, significantly
+                improving trading performance
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
 
-      <div id="education" class="d-flex justify-content-center flex-column align-items-center">
-        <br>
-        <h4 class="card-title text-start">Education</h5>
-        <br>
+      <div
+        id="education"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <br />
+        <h4 class="card-title text-start">Education</h4>
+        <br />
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
             <span class="d-flex">
-              <img src="imgs/nus.png" style=width:35px;height:32px;margin-right:5px;">
-              <a href="https://nus.edu.sg/" target="_blank"><h5 class="text-end accent">National University of Singapore</h5></a>  
+              <img src="imgs/nus.png"
+              style=width:35px;height:32px;margin-right:5px;">
+              <a href="https://nus.edu.sg/" target="_blank"
+                ><h5 class="text-end accent">
+                  National University of Singapore
+                </h5></a
+              >
             </span>
             <span class="text-start">Aug 2022 - May 2026 [Expected]</span>
           </div>
@@ -143,7 +250,12 @@
             <ul>
               <li>Major: Computer Science (Honours)</li>
               <li>Minor: Quantitative Finance</li>
-              <li>Relevant Coursework: Data Structures and Algorithms, Intro to Software Engineering, Intro to AI and Machine Learning, Intro to Operating Systems, Programming Methodology I and II, Intro to Computer Networks</li>
+              <li>
+                Relevant Coursework: Data Structures and Algorithms, Intro to
+                Software Engineering, Intro to AI and Machine Learning, Intro to
+                Operating Systems, Programming Methodology I and II, Intro to
+                Computer Networks
+              </li>
             </ul>
           </div>
         </div>
@@ -151,8 +263,11 @@
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
             <span class="d-flex">
-              <img src="imgs/nps.png" style=width:20px;height:25px;margin-right:5px;">
-              <h5 class="text-end accent">National Public School International</h5>
+              <img src="imgs/nps.png"
+              style=width:20px;height:25px;margin-right:5px;">
+              <h5 class="text-end accent">
+                National Public School International
+              </h5>
             </span>
             <span class="text-start">Aug 2012 - Aug 2020</span>
           </div>
@@ -162,173 +277,258 @@
               <li>International Baccalaureate: 43/45 points</li>
               <ul>
                 <li>Higher Level Subjects: Mathematics, Physics, Economics</li>
-                <li>Standard level Subjects: Chemistry, English Language and Literature, Hindi</li>
+                <li>
+                  Standard level Subjects: Chemistry, English Language and
+                  Literature, Hindi
+                </li>
               </ul>
               <li>IGCSE: 10A* 1A</li>
             </ul>
           </div>
         </div>
-
-        <div id="projects" class="d-flex justify-content-center flex-column align-items-center">
-          <br>
-          <h4 class="card-title text-start">Projects</h5>
-          <br>
-          <div class="card mb-3 container-small">
-            <div class="card-header d-flex justify-content-between">
-              <h5 class="text-end accent">Predicting match outcomes with betting odds</h5>
-              <span class="text-start">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width:20px;height:20px;">
-                <img src="imgs/pytorch.svg" alt="Pytorch" style="width:20px;height:20px;">
-                <img src="imgs/react.svg" alt="React Native" style="width:20px;height:20px;">
-              </span>
-            </div>
-            <div class="card-body text-start">
-              <h5 class="card-title"></h5>
-              <ul>
-                <li>Conducted data preprocessing for over 100K basketball records and trained Machine Learning models such as the logistic regression model and random forest model for arbitrage betting strategies in sports leagues like the NBA</li>
-                <li>Generated binary predictions by ensembling all models via stacking with a meta-learner & voting with equal weights. These predictions had an accuracy of around 99%</li>
-
-              </ul>
-            </div>
+      </div>
+      <div
+        id="projects"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <br />
+        <h4 class="card-title text-start">Projects</h4>
+        <br />
+        <div class="card mb-3 container-small">
+          <div class="card-header d-flex justify-content-between">
+            <h5 class="text-end accent">
+              Predicting match outcomes with betting odds
+            </h5>
+            <span class="text-start">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                alt="Python"
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="imgs/pytorch.svg"
+                alt="Pytorch"
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="imgs/react.svg"
+                alt="React Native"
+                style="width: 20px; height: 20px"
+              />
+            </span>
           </div>
-
-          <div class="card mb-3 container-small">
-            <div class="card-header d-flex justify-content-between">
-              <h5 class="text-end accent">Property Price Prediction ML Model and Mobile app</h5>
-              <span class="text-start">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width:20px;height:20px;">
-                <img src="https://static-00.iconduck.com/assets.00/tensorflow-icon-478x512-tlt8tjbe.png" alt="Tensorflow" style="width:20px;height:20px;">
-              </span>
-            </div>
-            <div class="card-body text-start">
-              <h5 class="card-title"></h5>
-              <ul>
-                <li>Spearheaded feature engineering efforts using a combination of categorical, spatial, and numerical features, employing techniques like one-hot encoding, feature scaling, and geocoding </li>
-                <li>Developed and fine-tuned Random Forest, Deep Neural Network, and Linear Regression models using PyTorch and scikit-learn, achieving an R-squared value of 0.97 </li>
-                <li>Built a full-stack property price prediction mobile application with a React Native frontend and Flask backend, enabling users to make predictions based on input parameters </li>
-              </ul>
-            </div>
+          <div class="card-body text-start">
+            <h5 class="card-title"></h5>
+            <ul>
+              <li>
+                Conducted data preprocessing for over 100K basketball records
+                and trained Machine Learning models such as the logistic
+                regression model and random forest model for arbitrage betting
+                strategies in sports leagues like the NBA
+              </li>
+              <li>
+                Generated binary predictions by ensembling all models via
+                stacking with a meta-learner & voting with equal weights. These
+                predictions had an accuracy of around 99%
+              </li>
+            </ul>
           </div>
+        </div>
 
-      <div id="personal-projects" class="d-flex justify-content-center flex-column align-items-center">
-        <h4 class="card-title text-start">Featured Personal Projects</h5>
+        <div class="card mb-3 container-small">
+          <div class="card-header d-flex justify-content-between">
+            <h5 class="text-end accent">
+              Property Price Prediction ML Model and Mobile app
+            </h5>
+            <span class="text-start">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                alt="Python"
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="https://static-00.iconduck.com/assets.00/tensorflow-icon-478x512-tlt8tjbe.png"
+                alt="Tensorflow"
+                style="width: 20px; height: 20px"
+              />
+            </span>
+          </div>
+          <div class="card-body text-start">
+            <h5 class="card-title"></h5>
+            <ul>
+              <li>
+                Spearheaded feature engineering efforts using a combination of
+                categorical, spatial, and numerical features, employing
+                techniques like one-hot encoding, feature scaling, and geocoding
+              </li>
+              <li>
+                Developed and fine-tuned Random Forest, Deep Neural Network, and
+                Linear Regression models using PyTorch and scikit-learn,
+                achieving an R-squared value of 0.97
+              </li>
+              <li>
+                Built a full-stack property price prediction mobile application
+                with a React Native frontend and Flask backend, enabling users
+                to make predictions based on input parameters
+              </li>
+            </ul>
+          </div>
+        </div>
 
-        <!-- Row 1 of projects -->
-        <div class="d-flex">
-          <div class="card project-card-left" style="width: 20rem;">
-            <!-- <img src="https://ay2324s2-cs2103t-w12-4.github.io/tp/images/Logo.png" class="card-img-top" alt="connect-care-logo"> -->
-            <div class="card-body text-start">
-              <div class="d-flex justify-content-between">
-                <h5 class="text-end accent">ConnectCare</h5>
-                <span class="text-start">
-                  <img src="imgs/java.svg" alt="Java" style="width:25px;height:25px;">
-                </span>
+        <div
+          id="personal-projects"
+          class="d-flex justify-content-center flex-column align-items-center"
+        >
+          <h4 class="card-title text-start">Featured Personal Projects</h4>
+
+          <!-- Row 1 of projects -->
+          <div class="d-flex">
+            <div class="card project-card-left" style="width: 20rem">
+              <!-- <img src="https://ay2324s2-cs2103t-w12-4.github.io/tp/images/Logo.png" class="card-img-top" alt="connect-care-logo"> -->
+              <div class="card-body text-start">
+                <div class="d-flex justify-content-between">
+                  <h5 class="text-end accent">ConnectCare</h5>
+                  <span class="text-start">
+                    <img
+                      src="imgs/java.svg"
+                      alt="Java"
+                      style="width: 25px; height: 25px"
+                    />
+                  </span>
+                </div>
+                <p class="card-text">
+                  A comprehensive platform designed to empower social workers in
+                  delivering personalized care and support to their clients
+                </p>
+                <a
+                  href="https://ay2324s2-cs2103t-w12-4.github.io/tp/UserGuide.html#quick-start"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  >Check it out!</a
+                >
               </div>
-            <p class="card-text">A comprehensive platform designed to empower social workers in delivering personalized care and support to their clients</p>
-              <a href="https://ay2324s2-cs2103t-w12-4.github.io/tp/UserGuide.html#quick-start" target="_blank" class="btn btn-outline-dark">Check it out!</a>
             </div>
-          </div>
 
-          <div class="card project-card-right" style="width: 20rem;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body text-start">
-              <div class="d-flex justify-content-between">
-                <h5 class="text-end accent">CoordiMate</h5>
-                <span class="text-start">
-                  <img src="imgs/javascript.svg" alt="javascript" style="width:25px;height:25px;">
-                </span>
+            <div class="card project-card-right" style="width: 20rem">
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body text-start">
+                <div class="d-flex justify-content-between">
+                  <h5 class="text-end accent">CoordiMate</h5>
+                  <span class="text-start">
+                    <img
+                      src="imgs/javascript.svg"
+                      alt="javascript"
+                      style="width: 25px; height: 25px"
+                    />
+                  </span>
+                </div>
+                <p class="card-text">
+                  A full-stack web application using the MERN (MongoDb,
+                  Express.js, React.js, Node.js) tech stack
+                </p>
+                <a
+                  href="https://coordimate-xj3z.onrender.com/"
+                  target="_blank"
+                  class="btn btn-outline-dark"
+                  >Check it out!</a
+                >
               </div>
-              <p class="card-text">A full-stack web application using the MERN (MongoDb, Express.js, React.js, Node.js) tech stack</p>
-              <a href="https://coordimate-xj3z.onrender.com/" target="_blank" class="btn btn-outline-dark">Check it out!</a>
             </div>
           </div>
         </div>
 
-      </div>
-
         <!-- Row 2 of projects -->
         <div class="d-flex">
-          
-          <div class="card project-card-right" style="width: 20rem;">
+          <div class="card project-card-right" style="width: 20rem">
             <!-- <img src="..." class="card-img-top" alt="..."> -->
             <div class="card-body text-start">
               <div class="d-flex justify-content-between">
                 <h5 class="text-end accent">Java Chatbot</h5>
                 <span class="text-start">
-                  <img src="imgs/java.svg" alt="Java" style="width:25px;height:25px;">
+                  <img
+                    src="imgs/java.svg"
+                    alt="Java"
+                    style="width: 25px; height: 25px"
+                  />
                 </span>
               </div>
-              <p class="card-text">Using JavaFX and Java to build a chatbot GUI application to help manage todo lists.</p>
-              <a href="https://github.com/Rishit02/ip" target="_blank" class="btn btn-outline-dark">Check it out!</a>
+              <p class="card-text">
+                Using JavaFX and Java to build a chatbot GUI application to help
+                manage todo lists.
+              </p>
+              <a
+                href="https://github.com/Rishit02/ip"
+                target="_blank"
+                class="btn btn-outline-dark"
+                >Check it out!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="skills"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <h4 class="card-title text-start">Skills</h4>
+
+        <div class="d-flex">
+          <div class="card project-card-right" style="width: 20rem">
+            <div class="card-body text-start">
+              <h5 class="card-title">Programming Languages</h5>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>C/C++</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card project-card-right" style="width: 20rem">
+            <div class="card-body text-start">
+              <h5 class="card-title">Software Development Frameworks</h5>
+              <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>ASP .NET Core</li>
+                <li>Docker</li>
+              </ul>
             </div>
           </div>
         </div>
 
-      </div>
-
-      <div id="skills" class="d-flex justify-content-center flex-column align-items-center">
-        <h4 class="card-title text-start">Skills</h5>
-
         <div class="d-flex">
-        <div class="card project-card-right" style="width: 20rem;">
-          <div class="card-body text-start">
-            <h5 class="card-title">Programming Languages</h5>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>C#</li>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>C/C++</li>
-            </ul>
+          <div class="card project-card-right" style="width: 20rem">
+            <div class="card-body text-start">
+              <h5 class="card-title">Machine learning libraries</h5>
+              <ul>
+                <li>Pytorch</li>
+                <li>TensorFlow</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>scikit-learn</li>
+                <li>matplotlib</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="card project-card-right" style="width: 20rem;">
-          <div class="card-body text-start">
-            <h5 class="card-title">Software Development Frameworks</h5>
-            <ul>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>ASP .NET Core</li>
-              <li>Docker</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex">
-        <div class="card project-card-right" style="width: 20rem;">
-          <div class="card-body text-start">
-            <h5 class="card-title">Machine learning libraries</h5>
-            <ul>
-              <li>Pytorch</li>
-              <li>TensorFlow</li>
-              <li>NumPy</li>
-              <li>Pandas</li>
-              <li>scikit-learn</li>
-              <li>matplotlib</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="card project-card-right" style="width: 20rem;">
-          <div class="card-body text-start">
-            <h5 class="card-title">Certifications and Skills</h5>
-            <ul>
-              <li>Google Cybersecurity certification</li>
-              <li>Linux</li>
-              <li>Git</li>
-              <li>Wireshark</li>
-            </ul>
+          <div class="card project-card-right" style="width: 20rem">
+            <div class="card-body text-start">
+              <h5 class="card-title">Certifications and Skills</h5>
+              <ul>
+                <li>Google Cybersecurity certification</li>
+                <li>Linux</li>
+                <li>Git</li>
+                <li>Wireshark</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
-      </div>
-      </div>
-
     </div>
-
   </body>
 </html>
