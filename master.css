@@ -1,237 +1,158 @@
-html, body, div, span, p, li, ul, a, h2 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	overflow: hidden;
-	font-family: 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans', "Roboto","Helvetica Neue","Lucida Grande",'Arial',sans-serif;
+:root {
+    --color-primary: #84A98C;
+    --color-secondary: hsl(199, 50%, 10%);
+    --color-tertiary: hsl(259, 80%, 20%);
+    --color-accent: hsl(139, 80%, 20%);
+}
+.dark-mode {
+    --color-primary: #181C14;
+    --color-secondary: #3C3D37;
+    --color-tertiary: #697565;
+    --color-accent: #ECDFCC;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
 }
 
-h1 {
-	font-size: 26pt;
-}
-h2{
-	font-size: 20pt;
-	font-style: bold;
-}
-h3 {
-	font-size: 18pt;
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.navbar {
-		flex-direction: column;
-		overflow-y: scroll;
-	}
-	.lightbox:target figure figcaption{
-		overflow-y: scroll;
-		margin: 2rem;
-		width: fit-content;
-	}
+#name, #name.dark-mode {
+    color: var(--color-accent);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 690px) {
-	.navbar ul{
-		flex-direction: column;
-		overflow-y: scroll;
-	}
-	.navbar ul li {
-		border-bottom: #dcdfe8;
-	}
-	
-	.lightbox:target figure figcaption {
-		overflow-y: scroll;
-		margin: 2rem;
-		width: fit-content;
-	}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-	.lightbox:target figure figcaption {
-		overflow-y: auto;
-		margin: 2rem;
-		width: fit-content;
-	}
+.navbar.dark-mode {
+    background-color: var(--color-secondary);
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {}
-
-.stronger {
-	font-weight: bold;
-	line-height: 1.3em;
+a.nav-link.active.dark-mode {
+    text-decoration: none;
 }
 
-body {
-	/* background: #23222b; */
-	background: radial-gradient(circle, rgba(35,35,45,1) 0%, rgba(42,41,55,1) 100%);
-	color: #ffffff;
-	font-family: "Source Sans Pro", sans-serif;
-	letter-spacing: 0.2rem;
-	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1;
-	position: relative;
+.nav-link.dark-mode, .navbar-brand.dark-mode {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-accent) !important;
 }
 
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	min-height: 100vh;
-	width: 100%;
-	z-index: 3;
-	overflow: hiden;
+.nav-link.dark-mode.active {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-#header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	max-width: 100%;
-	position: fixed;
+.btn-outline-dark.dark-mode {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 
-#header .content {
-	border-style: solid;
-	border-color: #ffffff;
-	border-top-width: 1px;
-	border-bottom-width: 1px;
-	max-width: 100%;
-	margin-bottom: 5rem;
+.btn-outline-dark.dark-mode:hover {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
-#header .content {
-	transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-	transition-delay: 0.25s;
-	opacity: 1;
-	padding: 3rem 2rem;
-	max-height: 40rem;
-	overflow: hidden;
-	justify-content: center;
+.card.dark-mode {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
-#header nav ul {
-	display: flex;
-	margin-bottom: 0;
-	list-style: none;
-	padding-left: 0;
-	border: solid 1px #ffffff;
-	border-radius: 5px;
+.card-header.dark-mode {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
-#header nav ul li {
-	padding-left: 0;
-	border-right: solid 1px #ffffff;
-	padding: 0.25rem 1rem;
+.accent.dark-mode {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
 }
 
-#header nav ul li a {
-	display: block;
-	padding: 0.25rem;
-	letter-spacing: 0.2rem;
+h1.dark-mode {
+    color: var(--color-accent);
 }
 
-ol, ul {
-	list-style: none;
+/* Project Card Specific */
+.project-card-left.dark-mode, .project-card-right.dark-mode {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-tertiary);
 }
 
-li {
-	line-height: 1.45rem;
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    } 
+} 
+@media (min-width: 992px) {
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    } 
+} 
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    } 
+}
+
+.accent, .card-title {
+    color: var(--color-accent);
+}
+
+.glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow:
+        /* Bottom and right depth effect */
+        inset -0.75px -0.5px rgba(255, 255, 255, 0.1),
+        /* Top and left depth effect */
+        inset +0.75px +0.5px rgba(255, 255, 255, 0.025),
+        /* Shadow effect */
+        3px 2px 10px rgba(0, 0, 0, 0.25),
+        /* Short subsurface effect */
+        inset 0px 0px 10px 5px rgba(255, 255, 255, 0.025),
+        /* Long subsurface effect */
+        inset 0px 0px 40px 5px rgba(255, 255, 255, 0.025);
+}
+
+/* Card Styles */
+.card:hover {
+    transform: scale(1.02);
 }
 
 a {
-	color: #dcdfe8;
-	text-decoration: none;
+    text-decoration: none;
+    color: black;
 }
 
-#header li:hover{
-	background-color: rgba(255, 255, 255, 0.075);
+a.dark-mode {
+    text-decoration: none;
 }
 
-/* Unopened lightbox */
-.lightbox {
-  display: none;
-  overflow-y: scroll;
+.container-small, .container-large {
+    max-width: 100%;
 }
 
-/* Opened lightbox */
-.lightbox:target {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Sora', sans-serif;
-  scroll-behavior: smooth;
+.project-card-left {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Lightbox content */
-.lightbox figcaption {
-	width:50rem;
-	position: relative;
-	padding: 1.5em;
-	background-color: rgba(27, 31, 34);
-	letter-spacing: normal;
-	font-size: 18px;
-	line-height: 1.6;
-	scroll-behavior: smooth;
+.intro {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.lightbox figcaption li {
-	line-height: 1.6;
-
-}
-
-/* Close button */
-.lightbox .close {
-  position: relative;
-  display: block;
-}
-
-.lightbox .close::after {
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  border-radius: 5px;
-  color: white;
-  content: "x";
-  cursor: pointer;
-}
-
-/* Lightbox overlay */
-.lightbox .close::before {
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: rgba(0,0,0,.7);
-  content: "";
-  cursor: default;
-}
-
-iframe {
-	width: inherit;
-	height: 50rem;
-	line-height:1.2;
+.project-card-right {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }

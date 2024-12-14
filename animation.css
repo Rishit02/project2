@@ -1,0 +1,23 @@
+/* Animation for the entire body */
+.intro {
+    animation: fadeIn 1s ease-out, slideDown 1s ease-out;
+    opacity: 1; /* Start invisible */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px); /* Move down */
+    }
+    to {
+        transform: translateY(0); /* Settle to the normal position */
+    }
+}
