@@ -96,6 +96,11 @@
               >Skills</a
             >
           </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact"
+              >Contact</a
+            >
+          </li>
         </ul>
         <!-- Dark Mode Toggle -->
         <button class="btn btn-outline-dark ms-auto" onclick="toggleDarkMode()">
@@ -120,9 +125,12 @@
         <br />
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
-            <a href="https://thesoftwarepractice.com/"
-              ><h5 class="text-end accent">The Software Practice</h5></a
-            >
+            <span class="d-flex">
+              <img src="imgs/tsp-logo.jpeg" style="height:20px; width: 20px; margin-top: 2px; margin-right: 5px;">
+              <a href="https://thesoftwarepractice.com/"
+                ><h5 class="text-end accent">The Software Practice</h5></a
+              >
+            </span>
             <span class="text-start">
               <img src="imgs/c-sharp-c.svg" style="width: 20px; height: 20px" />
               May - Nov 2024
@@ -151,9 +159,12 @@
 
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
-            <a href="https://www.emsec.uk/" target="_blank"
+            <span class="d-flex">
+              <img src="imgs/emsec-logo.png" style="width: 20px; height: 20px; margin-top: 2px; margin-right: 5px;">
+              <a href="https://www.emsec.uk/" target="_blank"
               ><h5 class="text-end accent">Emsec</h5></a
             >
+            </span>
             <span class="text-start">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
@@ -187,7 +198,10 @@
 
         <div class="card mb-3 container-small">
           <div class="card-header d-flex justify-content-between">
-            <h5 class="text-end accent">CL3O Intelligence</h5>
+            <span class="d-flex">
+              <img src="imgs/cl30-logo.jpeg" style="width: 20px;height: 20px;margin-top: 2px;margin-right: 5px;">
+              <h5 class="text-end accent">CL3O Intelligence</h5>
+            </span>
             <span class="text-start">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
@@ -520,11 +534,87 @@
             <div class="card-body text-start">
               <h5 class="card-title">Certifications and Skills</h5>
               <ul>
-                <li>Google Cybersecurity certification</li>
+                <li>
+                  <a href="https://www.coursera.org/account/accomplishments/specialization/4EWBCEF6W8SD" target="_blank">Google Cybersecurity certification</a>
+                </li>
                 <li>Linux</li>
                 <li>Git</li>
                 <li>Wireshark</li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div
+        id="interests"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <br />
+        <h4 class="card-title text-start">Other interests</h4>
+        <br />
+        <div class="card mb-3 container-small">
+          <div class="card-header d-flex justify-content-between">
+            <h5 class="text-end accent">
+              Predicting match outcomes with betting odds
+            </h5>
+            <span class="text-start">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
+                alt="Python"
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="imgs/pytorch.svg"
+                alt="Pytorch"
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="imgs/react.svg"
+                alt="React Native"
+                style="width: 20px; height: 20px"
+              />
+            </span>
+          </div>
+          <div class="card-body text-start">
+            <h5 class="card-title"></h5>
+            <ul>
+              <li>
+                Conducted data preprocessing for over 100K basketball records
+                and trained Machine Learning models such as the logistic
+                regression model and random forest model for arbitrage betting
+                strategies in sports leagues like the NBA
+              </li>
+              <li>
+                Generated binary predictions by ensembling all models via
+                stacking with a meta-learner & voting with equal weights. These
+                predictions had an accuracy of around 99%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+
+      <div
+        id="contact"
+        class="d-flex justify-content-center flex-column align-items-center"
+      >
+        <h4 class="card-title text-start">Contact</h4>
+
+        <div class="d-flex justify-content-center container-small">
+          <div class="card project-card-right" style="width: 20rem">
+            <div class="card-body justify-content-center">
+              <p>Drop me an email to reach out! r02ishit@gmail.com</p>
+              <a href="https://github.com/Rishit02" target="_blank"
+                ><img src="imgs/github.svg" alt="Github" style="height: 32px;
+                width: 32px" /></a
+              >
+              <a href="https://www.linkedin.com/in/rishitkh/" target="_blank"
+                ><img
+                  src="imgs/linkedin.svg"
+                  alt="Linkedin"
+                  style="height: 30px; width: 30px"
+              /></a>
             </div>
           </div>
         </div>
