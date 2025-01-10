@@ -156,3 +156,36 @@ a.dark-mode {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+
+.progress-circle {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  
+  .background-circle {
+    fill: none;
+    stroke: #ddd; /* Light gray background */
+  }
+  
+  .foreground-circle {
+    fill: none;
+    stroke: #4CAF50; /* Green for advanced */
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+  
+  .proficiency-tag {
+    display: inline-block;
+    padding: 0.2em 0.6em; /* Adjust padding for size */
+    font-size: 0.75rem; /* Smaller font size */
+    font-weight: bold; /* Make the text bold */
+    color: #fff; /* Text color (white) */
+    background-color: #2f6630; /* Background color (blue) */
+    border-radius: 12px; /* Rounded corners for a tag-like appearance */
+    text-align: center; /* Center text inside the tag */
+    white-space: nowrap; /* Prevent text wrapping */
+    margin-right: 0.5em; /* Optional spacing between tags */
+  }
+  
